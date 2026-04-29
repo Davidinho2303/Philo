@@ -456,15 +456,19 @@ const TOPICS = [
     keys:'15 zonen feld halbfeld reihen spalten baseline mid aufbau row col corner mitte nummerierung 3 sekunden innenzonen 7 8 9 12 13 14',
     content:{ type:'court' }
   },
-  { id:'zo-besetzung', cat:'zonen', icon:'⬡', name:'Besetzung & Formation',
-    hint:'Diamant · Ballseite · Weakside',
-    keys:'besetzung pro zone reihe spalte max 1 2 diamant formation tok wing corner außenspalten grundformation weakside ballseite overload',
+  { id:'zo-besetzung', cat:'zonen', icon:'⬡', name:'Besetzung & Regeln',
+    hint:'Diamant · Ballseite · 3-Sek · Split · Rotation',
+    keys:'besetzung pro zone reihe spalte max 1 2 diamant formation tok wing corner außenspalten grundformation weakside ballseite overload 3 sekunden innenzonen split pass row 0 rotation passer weg stehen bleiben',
     content:{ type:'keypoints', points:[
       { main:'Max. 1 Spieler pro Zone', sub:'' },
       { main:'Max. 2 pro Reihe — nie drei auf gleicher Tiefe', sub:'' },
       { main:'Max. 2 pro Spalte — nur Außenspalten (Col 0, Col 4)', sub:'' },
       { main:'Grundformation: Diamant (1-2-2)', sub:'TOK oben · Mid-Wings · Corners außen' },
       { main:'Ballseite max. 3 · Weakside min. 2', sub:'Weakside darf nie leer sein · Overload 3-2 erlaubt' },
+      { main:'3-Sekunden-Regel', sub:'Zonen 7, 8, 9, 12, 13, 14 — max. 3 Sek ohne Ball. Ausnahme: Bigs für Post-Aktionen, Screens, High-Low' },
+      { main:'Pass nach Row 0 → immer Split', sub:'Passer stellt sofort Floor Spacer — Screen Away für TOK' },
+      { main:'Nach Pass: Passer rotiert weg vom Ball', sub:'Direkter Tausch oder Floor Spacer / 3er-Rotation — nie stehen bleiben' },
+      { main:'Nie stehen bleiben', sub:'Nach jedem Pass: Cut, Screen oder Relocate' },
     ]}
   },
   { id:'zo-drive', cat:'zonen', icon:'🔄', name:'Drive-Reaktion & Rotation',
